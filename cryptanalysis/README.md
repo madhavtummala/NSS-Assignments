@@ -199,8 +199,6 @@ We can use the same S-box like the one in the previous one and add a new permuat
 | 8 | 8 | 9 | 11 | 10 | 15 | 11 | 2 |
 | 12 | 13 | 13 | 2 | 14 | 0 | 15 | 7 |
 
-</br>
-</br>
 P-Box just maps the 8 bits input to new positions to produce 8 bit output. (rearranging)
 
 | Input | Output |
