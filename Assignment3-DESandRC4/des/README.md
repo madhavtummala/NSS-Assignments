@@ -1,7 +1,7 @@
 # DES Implementation
 
-Name: T.Madhav
-RollNo: 16CS01041
+Name: T.Madhav & Aditya Pal  
+RollNo: 16CS01041 & 16CS01017  
 Course: NSS
 
 ## Setting the key and message
@@ -64,3 +64,14 @@ cfg.iperm = 0; // disable initial permutation
 cfg.fperm = 0; // disable final permutation
 cfg.rounds = 4; // reduce to 4 rounds
 ```
+
+
+## Java Version (Added by [PalAditya](https://github.com/PalAditya))
+
+The Java version is far less flexible than the C Version, but is added so that it might help someone out. An example output from the code is (Note: Here input is to be given as 16 hexadecimal characters, that is between 0-F and not as 8 ASCII characters):
+
+<img src="DES.png" style="height:320px;width:850px;align:center"></img>
+
+**Note**: Difference in hexadecimal *nibbles* is **90/96**, or **93.75%** and in binary (bitwise) notation, **180/384** bits or **46.875%** bits are different, again close to the statistical value of 50%. This shows the strength of DES. 
+
+**Strength**: Strong confusion and diffusion properties, primarily due to the S-boxes (Substitution boxes). Also, encryption and decryption use the same keys (it is a *Feistel* cipher) and the same function, making it hardware friendly and cost effective. It also has the completeness property, that is each bit of ciphertext depends upon multiple bits of plaintext.
